@@ -1,0 +1,103 @@
+body {
+  background-color: #84817a;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+form {
+  position: relative;
+  height: 450px;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  animation-name: bg_color_animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.background img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(3px);
+}
+.img_logo img {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40px;
+}
+.img_logo img {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40px;
+}
+.break_top {
+  display: block;
+  height: 100px;
+}
+.form_control {
+  padding: 3px 27px;
+}
+.input_email {
+  text-align: center;
+  color: #ffff01b1;
+  padding-top: 40px;
+  font-family: "Ga Maamli", sans-serif;
+}
+.email_form {
+  width: 320px;
+  height: 25px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: #ffff011d;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding-right: 10px;
+}
+.email_form:focus {
+  outline: none;
+}
+.btn_reset {
+  text-align: center;
+}
+.btn_reset input {
+  cursor: pointer;
+  border: none;
+  border-radius: 35px;
+  height: 35px;
+  width: 80px;
+  font-weight: bold;
+}
+.btn_reset input:hover {
+  background-color: #ffff01;
+  transition: all 700ms;
+}
+.ady_hv_acc {
+  color: white;
+  padding-left: 30px;
+}
+.ady_hv_acc a {
+  color: skyblue;
+}
+
+@keyframes bg_color_animation {
+  from {
+    box-shadow: 20px 19px 500px 0px #ffff01d0;
+  }
+  to {
+    box-shadow: 20px 19px 500px 0px #ffff0127;
+  }
+}

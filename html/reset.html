@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/font.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
     <title>Reset Password</title>
-</head>
-<body>
-    <img src="../src/logo.jpg" alt="Moon_logo" id="Moon_logo">
-    <h1> <a href="./index.html">Moon</a></h1>
-    <br><br>
-    <label for="Enter_new_password">Enter your new password</label>
-    <input type="text" id="new_password">
-    <br><br>
-    <label for="Enter_new_password"> Re enter your new password</label>
-    <input type="text" id="new_password">
-    <br><br>
-    <input type="button" value="Confirm">
-    
-</body>
+  </head>
+  <body>
+    <div>
+      <form>
+        <div class="background">
+          <img src="../src/bgimg.jpg" />
+        </div>
+        <div class="img_logo">
+          <a href="../html/index.html"
+            ><img src="../src/logo.jpg" alt="Moon_logo" id="Moon_logo"
+          /></a>
+        </div>
+        <div class="title_object">
+          <h1>Reset you password</h1>
+        </div>
+        <div class="break_top"></div>
+        <div class="form_control">
+          <div class="input_pw">
+            <input
+              type="Text"
+              placeholder="Enter Your Password"
+              id="input_form"
+              class="input_form"
+            />
+          </div>
+          <div class="break_form"></div>
+          <div class="input_pw2">
+            <input
+              type="Text"
+              placeholder="Re Enter Your Password"
+              id="input_form"
+              class="input_form"
+            />
+          </div>
+        </div>
+
+        <br /><br />
+        <div class="btn_confirm">
+          <input type="button" value="Confirm" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

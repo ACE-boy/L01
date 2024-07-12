@@ -1,0 +1,93 @@
+@keyframes bg_color_animation {
+  from {
+    box-shadow: 20px 19px 500px 0px #ffff01d0;
+  }
+  to {
+    box-shadow: 20px 19px 500px 0px #ffff0127;
+  }
+}
+body {
+  background-color: #84817a;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+form {
+  position: relative;
+  height: 450px;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  animation-name: bg_color_animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.background img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(3px);
+}
+.img_logo img {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40px;
+}
+.img_logo img {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 40px;
+}
+.form_control {
+  padding: 0px 30px;
+}
+.title_object {
+  padding-top: 120px;
+  color: #ffff01b1;
+  text-align: center;
+  font-family: "Ga Maamli", sans-serif;
+}
+.input_form {
+  width: 320px;
+  height: 25px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: #ffff011d;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+.input_form:focus {
+  outline: none;
+}
+.break_form {
+  padding-top: 18px;
+}
+.btn_confirm {
+  text-align: center;
+}
+.btn_confirm input {
+  padding-left: 10px;
+  height: 35px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 35px;
+  border: none;
+}
+.btn_confirm input:hover {
+  background-color: #ffff01;
+  transition: all 700ms;
+}
