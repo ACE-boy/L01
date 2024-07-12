@@ -1,0 +1,121 @@
+@keyframes bg_color_animation {
+    from {
+        box-shadow: 20px 19px 500px 0px #ffff01d0;
+
+    }
+
+    to {
+        box-shadow: 20px 19px 500px 0px #ffff0127;
+    }
+}
+
+
+body {
+    background-color: #84817a;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+form {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    animation-name: bg_color_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+
+.background img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.img_logo img {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+}
+
+.break_top {
+    display: block;
+    height: 100px;
+}
+
+.h1_font {
+    font-family: "Ga Maamli", sans-serif;
+    color: #ffff01b1;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.form_control {
+    padding: 0px 30px;
+}
+
+.input_form {
+    width: 320px;
+    height: 25px;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #ffff011d;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.input_form:focus {
+    outline: none;
+}
+
+.birthday_form {
+    display: flex;
+    place-content: center;
+
+}
+
+.int_btn_login {
+    text-align: center;
+}
+
+.int_btn_login input {
+    padding-left: 10px;
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 35px;
+    border: none;
+}
+
+.int_btn_login input:hover {
+    background-color: #ffff01;
+    transition: all 700ms;
+}
+
+.hr_in_login_page {
+    border-color: #ffff0162;
+}
+
+.already_acc {
+    text-align: center;
+
+}
+
+.already_acc a {
+    color: skyblue;
+}
